@@ -250,16 +250,17 @@ export default function RegisterViewPage() {
 
     const inputStyle = {
       width: '100%',
-      padding: '10px 14px',
+      padding: '14px 18px',
       background: isEditable ? 'var(--bg-input)' : '#f8fafc',
       color: 'var(--text-primary)',
       border: '1px solid var(--border)',
       outline: 'none',
-      fontSize: '13px',
+      fontSize: '15px',
       fontWeight: 600,
-      borderRadius: '8px',
+      borderRadius: '10px',
       fontFamily: 'inherit',
-      transition: 'var(--transition)'
+      transition: 'var(--transition)',
+      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)'
     };
 
     if (col.type === 'image') {
@@ -659,9 +660,9 @@ export default function RegisterViewPage() {
                         display: 'flex', flexDirection: 'column', gap: '6px'
                       }}
                     >
-                      <label style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <label style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '2px' }}>
                         {col.name}
-                        {isPaymentCol && <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--accent)' }} />}
+                        {isPaymentCol && <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--accent)' }} />}
                       </label>
                       
                       {renderFormFieldInput(col)}
